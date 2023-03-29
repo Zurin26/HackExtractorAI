@@ -1,0 +1,21 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "BLOB_ACCOUNT_KEY": "muFKLm5FKMdUBOznEfll3pT3pnZg8uUhnSb7M5ZCnBacOl4bwJDhMBYPu8fTPau7jZxrEN/HGf0W+AStPg8tTQ==",
+    "BLOB_ACCOUNT_NAME": "hcdev9a94",
+    "BLOB_STORAGE_USER": "users",
+    "BLOB_STORAGE_SETUP": "setup",
+    "BLOB_STORAGE_TRANS": "transaction",
+    "COSMOS_KEY": "Ll7yrJokKcQyjCTv01TOeFLMGSssgWWhIqQXlfrmIrlS0z4uCUsbiM03mjuC848Go68dPNnmjCxDACDbJYcEUQ==",
+    "COSMOS_URL": "https://hc-cosmos-dev.documents.azure.com:443/",
+    "COSMOS_USER_DB": "dev",
+    "COSMOS_SETUP_DB": "dev",
+    "COSMOS_TRANS_DB": "dev"
+  },
+  "Host": {
+    "LocalHttpPort": 7071,
+    "CORS": "*"
+  }
+}

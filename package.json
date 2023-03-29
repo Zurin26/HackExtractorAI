@@ -1,5 +1,5 @@
 {
-  "name": "hc-func-http",
+  "name": "heai-func-app",
   "version": "1.0.0",
   "description": "Hello Charlie REST API that will help WebApp perform CRUD Operations",
   "scripts": {

@@ -61,8 +61,8 @@ async function readDocumentData(urlfile) {
           }
         }
       }
-    
-    return {
+      return {
+        valid: true,
         pages : {
             pagesLine : pagesLine,
             pagesWord : pagesWord

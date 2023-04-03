@@ -2,48 +2,15 @@ const COSMOS_CONFIG = {
   endpoint: process.env.COSMOS_URL,
   key: process.env.COSMOS_KEY,
   databases: {
-    userDB: {
-      name: process.env.COSMOS_USER_DB,
+    container: {
+      name: process.env.COSMOS_DB,
       mainPartition: 'id',
       containers: {
-        users: {
-          customer: 'Customer',
-          jobsaved: 'JobSaved'
+        ai: {
+          extractedData: 'ExtractedData'
         },
       },
     },
-    setupDB: {
-      name: process.env.COSMOS_SETUP_DB,
-      mainPartition: 'id',
-      containers: {
-        badges: 'Badges',
-        raffles: 'Raffles',
-        events: 'Events',
-        templates: 'Templates'
-      },
-    },
-    transactionDB: {
-      name: process.env.COSMOS_TRANS_DB,
-      mainPartition: 'UserID',
-      containers: {
-        feed: 'Feed',
-        jobpost: 'JobPost',
-        comment: 'Comment',
-        messages: 'Messages',
-        eventparticipants: 'EventParticipants',
-        likes: 'Likes',
-        sharedfeeds: 'SharedFeeds',
-        network: 'Network',
-        sharedfeedslike: 'SharedFeedsLike',
-        sharedfeedscomment: 'SharedFeedsComment',
-        repostfeed: 'RepostFeed',
-        repostfeedcomment: 'RepostFeedComment',
-        repostfeedlike: 'RepostFeedLike',
-        eventsharedfeed: 'EventSharedFeeds',
-        eventsharedfeedlike: 'EventSharedFeedsLike',
-        eventsharedfeedcomment: 'EventSharedFeedsComment',
-      },
-    }
   }
 };
 

@@ -26,7 +26,7 @@ module.exports = async function (context, req) {
     };
     return null;
   }
-  // let createdts = getUnixTime(new Date())
+  let createdts = getUnixTime(new Date())
   // const listofblobs = ['02172023154219.pdf', '02172023154225.pdf', '6578c46be66851c32c8e41d5e092b536.jpg', 'John Michael Cayabyab Resume.pdf', 'sample1.png', 'sample2.png']
   const {filename, container} = request.input
 
@@ -34,12 +34,12 @@ module.exports = async function (context, req) {
     const getDocumentData = await readDocumentData(getsasurl)
 
     if(getDocumentData.valid){
-    //   await ExtractedDataContainer.items.create({
-    //     Filename: filename,
-    //     Pages: getDocumentData?.pages,
-    //     Styles: getDocumentData?.styles,
-    //     CreatedTS:createdts
-    // })
+      await ExtractedDataContainer.items.create({
+        Filename: filename,
+        Pages: getDocumentData?.pages,
+        Styles: getDocumentData?.styles,
+        CreatedTS:createdts
+    })
       return (context.res = {
         body: {
           valid: true,

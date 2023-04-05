@@ -30,7 +30,13 @@ module.exports = async function (context, req) {
     const {container, keyword} = request.input
     const searchResult = await searchData(keyword,container)
 
-    if(searchResult.items.length > 0){
+  //   context.res = {
+  //     body: {
+  //       valid: true,
+  //       data : searchResult
+  //     },
+  // };
+    if(searchResult.length > 0){
         context.res = {
           body: {
             valid: true,
